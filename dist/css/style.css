@@ -17,7 +17,7 @@ html { height: 100dvh}
 
 body {
     height: 100%;
-    background-image: url(../img/img\ final.png);
+    background-image: url(/Calculadora-gorgetas/img/img\ final.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--secondary-color); /* Define a cor de fundo do corpo usando a cor primária */
@@ -28,6 +28,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 50px;
 }
 
 #container {
@@ -61,7 +63,7 @@ body {
     gap: 8px;
 
     & label{
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
     }
 }
@@ -96,12 +98,17 @@ body {
     border-radius: 30px;
     width: 100%;
     height: 90px;
-    font-size: 25px;
-     margin: 100px auto; 
+    font-size: 30px;
+     margin: 70px auto; 
     color: white; /* Define a cor do texto do botão como branco */
 }
 
 #totalTip {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
+}
+
+.mainfooter{
+display: flex;
+font-size:20px ;
 }

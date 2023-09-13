@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="../dist/css/style.css">
+        <title>Calculadora de Gorjetas</title>
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                <h1 class="title">Calculadora de Gorjetas</h1> <!-- Título principal da página -->
+            </div>
+            <div>
+                <form class="tipsForm" id="tipsForm"> <!-- Formulário para calcular gorjeta -->
+                    <label for="bill">
+                        <p>Quanto ficou a conta?</p> <!-- Pergunta sobre o valor total da conta -->
+                    </label>
+                    <p>
+                        R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required> <!-- Campo para inserir o valor total da conta -->
+                    </p>
+                    <label for="serviceQual">
+                        <p>Como foi o seu serviço?</p> <!-- Pergunta sobre a qualidade do serviço -->
+                    </label>
+                    <p>
+                        <select name="serviceQual" id="serviceQual" class="formSelect" required> <!-- Campo de seleção para escolher a qualidade do serviço -->
+                            <option disabled selected value="0">Escolha uma opção</option> <!-- Opção padrão desabilitada -->
+                            <option value="0.3">30% - Incrivel</option> <!-- Opção de serviço incrível com 30% de gorjeta -->
+                            <option value="0.2">20% - Bom</option> <!-- Opção de serviço bom com 20% de gorjeta -->
+                            <option value="0.15">15% - Aceitável</option> <!-- Opção de serviço aceitável com 15% de gorjeta -->
+                            <option value="0.1">10% - Ruim</option> <!-- Opção de serviço ruim com 10% de gorjeta -->
+                            <option value="0.05">05% - Péssimo</option> <!-- Opção de serviço péssimo com 5% de gorjeta -->
+                        </select>
+                    </p>
+                    <label for="people">
+                        <p>Quantas pessoas vão dividir a conta?</p> <!-- Pergunta sobre o número de pessoas para dividir a conta -->
+                    </label>
+                    <p>
+                        <input type="number" placeholder="1" name="people" id="people" class="formInput" required> pessoa(s) <!-- Campo para inserir o número de pessoas -->
+                    </p>
+                    <button type="submit" class="formSubmit" id="submit">Calcular</button> <!-- Botão para calcular a gorjeta -->
+
+                    <div id="totalTip">
+                        <!-- Gorjeta total: -->
+                        R$ <span id="tip">0.00</span> <!-- Local para exibir o valor total da gorjeta -->
+                        <span id="each">cada</span> <!-- Indicação de "cada" para divisão da gorjeta -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- <footer>
+            <div class="mainfooter">
+                
+                <h3> Desenvolvido por Daiana B. Thalia </h3>
+            </div>
+            <div> 
+                <img src="https://icons8.com.br/icon/ICA8lo7MU3EU/calculate" alt="">
+            </div>
+        </footer>  -->
+        <script type="text/javascript" src="../dist/js/index.js"></script> <!-- Inclusão do arquivo JavaScript para manipular o cálculo da gorjeta -->
+    </body>
+</html>
