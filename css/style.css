@@ -1,0 +1,107 @@
+/* Renato passou por aqui ;) */
+/* Tentem usar o gap em vez de margem, usem html semântico, convertam de px para rem(opcional), nomes mais intuitivos para as classes. */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(242, 6, 230); /* Define a cor terciária como pink */
+    --secondary-color: rgb(255, 255, 255); /* Define a cor secundária como  branco */
+    --tertiary-color: rgb(229, 128, 240); /* Define a cor primária como rosa claro */
+}
+html { height: 100dvh}
+
+body {
+    height: 100%;
+    background-image: url(../img/img\ final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--secondary-color); /* Define a cor de fundo do corpo usando a cor primária */
+    
+    font-size: 15px;
+    font-family: 'Lato', sans-serif; /* Define a fonte do texto como Lato */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 600px; /* Adjust the desired height */
+    max-width: 500px; /* Adjust the desired maximum width */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.268);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.title {
+    background: var(--tertiary-color); /* Define o plano de fundo do título usando a cor terciária */
+    color: var(--secondary-color); /* Define a cor do texto do título usando a cor secundária */
+    padding: 15px;
+
+    & h1 {
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin-top to move the text down */
+    }
+}
+
+
+.tipsForm {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+
+    & label{
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.formInput {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    outline: solid 1px gray;
+    color: rgb(0, 0, 0);;
+    padding: 4px;
+    margin:4px 0;
+    max-width: fit-content;
+}
+
+#bill.formInput{
+    width: 70px;
+}
+#people.formInput{
+    width: 40px;
+}
+.formInput:focus {
+    outline: 3px solid var(--primary-color); /* Adiciona uma borda sólida quando o campo de entrada recebe foco, usando a cor primária */
+    
+}
+
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    background: var(--primary-color); /* Define o plano de fundo do botão usando a cor primária */
+    border-radius: 30px;
+    width: 100%;
+    height: 90px;
+    font-size: 25px;
+     margin: 100px auto; 
+    color: white; /* Define a cor do texto do botão como branco */
+}
+
+#totalTip {
+    font-size: 50px;
+    text-align: center;
+}
